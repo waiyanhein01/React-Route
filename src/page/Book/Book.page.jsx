@@ -2,7 +2,7 @@ import React from 'react'
 
 const bookPage = () => {
   return (
-    <div>
+    <div >
       bookPage
     </div>
   )

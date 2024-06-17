@@ -1,24 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavComponent = () => {
   return (
     <nav>
       <ul className=" flex space-x-5 justify-center items-center text-blue-500 no-underline pt-5">
         <li>
-          <Link to={"/"}>Home</Link>
+          <NavLink to={"/"}>Home</NavLink>
         </li>
         <li>
-          <Link to={"/about"}>About</Link>
+          <NavLink to={"/about"} state={{Name:'Wai Yan Hein'}}>About</NavLink>
         </li>
         <li>
-          <Link to={"/contact"}>Contact</Link>
+          <NavLink to={"/contact"}>Contact</NavLink>
         </li>
         <li>
-          <Link to={"/book"}>Book</Link>
+          <NavLink to={"/book"} >Book</NavLink>
         </li>
         <li>
-          <Link to={"/book/2"}>DetailBook2</Link>
+          <NavLink to={"/book/2"}>DetailBook2</NavLink>
         </li>
       </ul>
     </nav>
