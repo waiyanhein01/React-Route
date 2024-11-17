@@ -8,6 +8,9 @@ import BookPage from "./page/Book/Book.page";
 import DetailBookPage from "./page/Book/DetailBook.page";
 import AuthorPage from "./page/Book/Author.page";
 import NotFound from "./not-found";
+import RegisterPage from "./page/auth/Register.page";
+import VerificationPage from "./page/auth/Verification.page";
+
 
 const App = () => {
   return (
@@ -15,13 +18,16 @@ const App = () => {
       <BrowserRouter>
         <NavComponent />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          {/* <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />}/>
           <Route path="/book" element={<BookPage />}/>
           <Route path="/book/:id" element={<DetailBookPage />}/>
           <Route path="/book/:id/author" element={<AuthorPage />}/>
-          <Route path="*" element={<NotFound/>}/>
+          <Route path="*" element={<NotFound/>}/> */}
+
+          <Route path="/" element={<RegisterPage />} />
+          <Route path="/verification" element={<VerificationPage />} />
         </Routes>
       </BrowserRouter>
     </div>
